@@ -1,0 +1,28 @@
+# Standard Library
+- Comparisons
+    - `eql` Two Arguments → Bool
+        - Checks if two values are equal. Returns the result of the comparison.
+    - `big` Two Numbers → Bool
+        - Checks if the first number is bigger than the second one. Returns the result of the comparison.
+    - `sml` Two Numbers → Bool
+        - Checks if the first number is smaller than the second one. Returns the result of the comparison.
+- Number operations
+    - `inc` One Number → Number
+        - Returns the number incremented by one.
+    - `dec` One Number → Number
+        - Returns the number decremented by one.
+    - `add` Multiple Numbers → Number
+        - Adds numbers. Can take multiple arguments, but requires two. Returns the result of the addition.
+    - `sub` Multiple Numbers → Number
+        - Subtracts numbers. Can take multiple arguments, but requires two. Returns the result of the subtraction.
+    - `mul` Multiple Numbers → Number
+        - Multiplies numbers. Can take multiple arguments, but requires two. Returns the result of the multiplication.
+    - `div` Multiple Numbers → Number
+        - Divides numbers. Can take multiple arguments, but requires two. Returns the result of the division.
+- Others
+    - `for` Number & Function Name → Number
+        - Calls a function multiple times. How many times the function will be executed is determined by the first argument. Can't take any other arguments (for now) and returns the first argument.
+    - `if` Bool & Function Name → Bool
+        - Calls a function if the first argument is `True`. Can't take any other arguments (for now) and returns the first argument.
+    - `exit` No Arguments → Exit
+        - Exits the program

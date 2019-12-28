@@ -1,0 +1,16 @@
+-- This script generates a super simple website
+
+let title = "Hello World!"
+let body = "This is a super simple web page generated with StarShip."
+
+generateWebsite :: String & String -> String
+    "<h1>"
+    arg1
+    "</h1><p>"
+    arg2
+    "</p>"
+    rtrn "<!-- Done -->"
+end
+
+let _ = generateWebsite title body
+_

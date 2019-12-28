@@ -1,0 +1,7 @@
+-- prints out "hello world" ten times
+hello :: -> Bool
+    "hello world"
+    rtrn True
+end
+
+let _ = for 10 hello
