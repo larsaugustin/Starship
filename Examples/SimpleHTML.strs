@@ -9,7 +9,7 @@ generateWebsite :: String & String -> String
     "</h1><p>"
     arg2
     "</p>"
-    rtrn "<!-- Done -->"
+    return "<!-- Done -->"
 end
 
 let _ = generateWebsite title body

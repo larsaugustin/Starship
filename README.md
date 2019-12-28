@@ -19,7 +19,7 @@ The following code prints "hello world" ten times.
 ```
 hello :: -> Bool
     "hello world"
-    rtrn True
+    return True
 end
 
 let _ = for 10 hello

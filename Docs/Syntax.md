@@ -18,16 +18,16 @@ end
 ```
 
 ## Return
-Return is written as `rtrn`. After the keyword, you can either insert an absolute value or reference a variable.
+Return is written as `return`. After the keyword, you can either insert an absolute value or reference a variable.
 
 Here is an example of returning an absolute value …
 ```
-rtrn "hello world"
+return "hello world"
 ```
 
 … and here one of returning a variable
 ```
-rtrn variableName
+return variableName
 ```
 
 ## Comments

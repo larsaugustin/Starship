@@ -12,13 +12,13 @@ public class Lexer {
         var type: TokenType
     }
     let keywords: [Keyword] = [
-        Keyword(value: " = ", type: .equals),
-        Keyword(value: " :: ", type: .funcAssignment),
+        Keyword(value: "= ", type: .equals),
+        Keyword(value: ":: ", type: .funcAssignment),
         Keyword(value: "& ", type: .amp),
         Keyword(value: "->", type: .arrow),
         Keyword(value: "end", type: .end),
         Keyword(value: "let ", type: .let),
-        Keyword(value: "rtrn ", type: .return),
+        Keyword(value: "return ", type: .return),
         Keyword(value: "True", type: .bool),
         Keyword(value: "False", type: .bool),
         Keyword(value: "\n", type: .eol)]

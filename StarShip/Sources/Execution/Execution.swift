@@ -309,11 +309,11 @@ public class Execution {
                 // MARK: Return variable
                 // the last variable with the name will be used, since an old variable with the same name can still be in the stack in certain situations
                 // this is mostly just a bug waiting to be fixed
-                let rtrnVariable = variableStack.last(where: { variable -> Bool in
+                let returnVariable = variableStack.last(where: { variable -> Bool in
                     variable.name == (instructions.first! as! returnVariable).name
                 })
-                if rtrnVariable != nil {
-                    returningValue = rtrnVariable?.value
+                if returnVariable != nil {
+                    returningValue = returnVariable?.value
                 } else {
                     print("Fatal error: Variable not found")
                     exit(0)
