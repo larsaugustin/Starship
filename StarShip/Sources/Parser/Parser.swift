@@ -38,6 +38,9 @@ public class Parser {
                     let newInstruction = functionVariable(name: tokens[1].val, functionName: tokens[3].val, arguments: arguments)
                     instructions.append(newInstruction)
                     tokens.removeFirst(4 + arguments.count)
+                } else {
+                    print("Fatal error: Unknown pattern")
+                    exit(0)
                 }
 
             } else if tokens.first!.type == .string || tokens.first!.type == .number || tokens.first!.type == .bool {
@@ -153,7 +156,13 @@ public class Parser {
                         instructions.append(newInstruction)
 
                         tokens.removeFirst(3 + arguments.count)
+                    } else {
+                        print("Fatal error: Unknown pattern")
+                        exit(0)
                     }
+                } else {
+                    print("Fatal error: Unknown pattern")
+                    exit(0)
                 }
             } else if tokens.first!.type == .return {
                 // MARK: Return statement
@@ -165,6 +174,9 @@ public class Parser {
                     let newInstruction = returnAbsoluteValue(value: Helpers().getValueFromToken(tokens[1]),
                                                              dataType: Helpers().getDataType(tokens[1]))
                     instructions.append(newInstruction)
+                } else {
+                    print("Fatal error: Unknown pattern")
+                    exit(0)
                 }
                 tokens.removeFirst(2)
             } else {
