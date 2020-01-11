@@ -268,6 +268,15 @@ public class Execution {
                     // random errors
                     newVariable != nil ? variableStack.append(newVariable!) : print("Couldn't invoke standard function")
                     instructions.removeFirst()
+                } else if let absVar = variableStack.first(where: { variable -> Bool in
+                    variable.name == (instructions.first! as! functionVariable).functionName
+                }) {
+                    // defining a new variable from an existing variable
+                    let newVariable = absoluteVariable(name: (instructions.first! as! functionVariable).name,
+                                                       value: absVar.value,
+                                                       dataType: absVar.dataType)
+                    variableStack.append(newVariable)
+                    instructions.removeFirst()
                 } else {
                     // if the function isn't a std func and not in the function stack, it doesn't exist
                     print("Fatal error: Function isn't yet defined")
