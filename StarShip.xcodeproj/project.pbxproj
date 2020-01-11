@@ -15,8 +15,8 @@
 		99448BF523B674AF00A20E8B /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99448BF423B674AF00A20E8B /* Parser.swift */; };
 		99448BFA23B6750400A20E8B /* Lexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99448BF923B6750400A20E8B /* Lexer.swift */; };
 		99448BFC23B6752D00A20E8B /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99448BFB23B6752D00A20E8B /* Token.swift */; };
-		99448BFF23B6757B00A20E8B /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99448BFE23B6757B00A20E8B /* Global.swift */; };
 		99448C0723B792B400A20E8B /* LICENSE in Sources */ = {isa = PBXBuildFile; fileRef = 99448C0623B792B400A20E8B /* LICENSE */; };
+		996DC06023CA6DEA000E4BB8 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996DC05F23CA6DEA000E4BB8 /* Global.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,7 +41,6 @@
 		99448BF423B674AF00A20E8B /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		99448BF923B6750400A20E8B /* Lexer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lexer.swift; sourceTree = "<group>"; };
 		99448BFB23B6752D00A20E8B /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
-		99448BFE23B6757B00A20E8B /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		99448C0023B675B700A20E8B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		99448C0123B67CC300A20E8B /* SimpleHTML.strs */ = {isa = PBXFileReference; lastKnownFileType = text; path = SimpleHTML.strs; sourceTree = "<group>"; };
 		99448C0223B67F3100A20E8B /* Hello.strs */ = {isa = PBXFileReference; lastKnownFileType = text; path = Hello.strs; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		99448C0423B69BEE00A20E8B /* Architecture.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Architecture.md; sourceTree = "<group>"; };
 		99448C0523B69C7100A20E8B /* Syntax.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Syntax.md; sourceTree = "<group>"; };
 		99448C0623B792B400A20E8B /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		996DC05F23CA6DEA000E4BB8 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +152,7 @@
 		99448BFD23B6756700A20E8B /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				99448BFE23B6757B00A20E8B /* Global.swift */,
+				996DC05F23CA6DEA000E4BB8 /* Global.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -222,8 +222,8 @@
 				99448BEC23B6740B00A20E8B /* Execution.swift in Sources */,
 				99448BF023B6745A00A20E8B /* Instruction.swift in Sources */,
 				99448BFA23B6750400A20E8B /* Lexer.swift in Sources */,
-				99448BFF23B6757B00A20E8B /* Global.swift in Sources */,
 				99448BE123B6729D00A20E8B /* main.swift in Sources */,
+				996DC06023CA6DEA000E4BB8 /* Global.swift in Sources */,
 				99448C0723B792B400A20E8B /* LICENSE in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

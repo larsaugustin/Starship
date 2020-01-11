@@ -255,6 +255,16 @@ public class Execution {
                         return
                     }
 
+                    // check for type
+                    if variablesToReplace.count == 1 {
+                        if newVariable?.dataType != variablesToReplace[0] {
+                            print("variable that has to be replaced didn't match original type")
+                            return
+                        } else {
+                            variablesToReplace.removeAll()
+                        }
+                    }
+
                     // random errors
                     newVariable != nil ? variableStack.append(newVariable!) : print("Couldn't invoke standard function")
                     instructions.removeFirst()
