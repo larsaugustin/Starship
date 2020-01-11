@@ -39,12 +39,12 @@ public class Lexer {
                 program.removeFirst(firstKeyword.value.count)
             } else if program.hasPrefix("--") { // comment, starts with "--" ends at new line
                 let parts = String(program.dropFirst()).split(separator: "\n")
-                program = (parts.count != 1) ? String(parts.dropFirst().joined(separator: "\n")) : "" // no new token; skipping the comment
+                program = (parts.count != 1) ? "\n" + String(parts.dropFirst().joined(separator: "\n")) : "\n" // no new token; skipping the comment
             } else if program.hasPrefix("\"") { // string literal, enclosed value
                 let parts = String(program.dropFirst()).split(separator: "\"")
                 let newToken = Token(type: .string, val: String(parts[0]))
                 tokens.append(newToken)
-                program = (parts.count != 1) ? String(parts.dropFirst().joined(separator: "\"")) : ""
+                program = (parts.count != 1) ? String(parts.dropFirst().joined(separator: "\"")) : "\n"
             } else {
                 let seperatedItems = program.split(separator: " ")
                 if let _ = Float(seperatedItems[0]) { // if a float can be made from the token, it's a number
