@@ -26,6 +26,10 @@ public enum DataType {
     case string
     case number
     case bool
+
+    case stringArray
+    case numberArray
+    case boolArray
 }
 
 public struct absoluteVariable: Instruction {

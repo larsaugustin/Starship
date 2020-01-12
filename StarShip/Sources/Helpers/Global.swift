@@ -34,6 +34,12 @@ public class Helpers {
             return String(variable.value as! Bool)
         case .number:
             return String(variable.value as! Float)
+        case .stringArray:
+            return (variable.value as! [String]).joined(separator: " | ")
+        case .boolArray:
+            return (variable.value as! [Bool]).map { String($0) }.joined(separator: " | ")
+        case .numberArray:
+            return (variable.value as! [Float]).map { String($0) }.joined(separator: " | ")
         }
     }
 
@@ -73,6 +79,8 @@ public class Helpers {
             return .number
         case .string:
             return .string
+        case .stringArray, .boolArray, .numberArray:
+            return .array
         }
     }
 

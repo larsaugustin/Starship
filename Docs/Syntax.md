@@ -65,6 +65,7 @@ Right now, StarShip has three data types:
 - Strings can be written in quotes ("String value")
 - Numbers can be written as numbers (42)
 - Bools have the values `True` and `False`
+- Arrays are written like this: `[ 1 | 2 | 3]`
 
 ## That's it!
 StarShip is a pretty simplistic language. It doesn't have many features, but in combination with the [standard library](StandardLibrary.md), it can do some pretty cool stuff. Install the CLI, and give it a try!

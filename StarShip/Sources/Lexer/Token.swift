@@ -24,5 +24,7 @@ public enum TokenType {
     case string
     case bool
 
+    case array
+
     case eol
 }
